@@ -8,6 +8,7 @@ vim.o.expandtab = true
 vim.o.swapfile = false
 vim.g.mapleader = " "
 vim.o.winborder = "rounded"
+vim.o.termguicolors = true
 
 vim.pack.add({
  { src = "https://github.com/stevearc/oil.nvim.git" },
