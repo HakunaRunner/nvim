@@ -11,24 +11,28 @@ vim.o.winborder = "rounded"
 vim.o.termguicolors = true
 
 vim.pack.add({
- { src = "https://github.com/stevearc/oil.nvim.git" },
  { src = "https://github.com/nvim-mini/mini.pick.git" },
+ { src = "https://github.com/nvim-mini/mini.files.git" },
  { src = 'https://github.com/neovim/nvim-lspconfig' },
 })
 
 vim.lsp.enable({"lua_ls", "ts_ls", "angularls"})
 
 require('mini.pick').setup()
-require('oil').setup()
+require('mini.files').setup()
 
+vim.keymap.set('n', '<leader>c', ':e ~/.config/nvim/init.lua<CR>')
 vim.keymap.set('n', '<leader>w', ':write<CR>')
 vim.keymap.set('n', '<leader>s', ':source<CR>')
 vim.keymap.set('n', '<leader>q', ':quit<CR>')
-vim.keymap.set('n', '<leader>e', ':$<CR>')
+vim.keymap.set('n', '<leader>qq', ':q!<CR>')
+vim.keymap.set('n', '<leader>e', ':lua MiniFiles.open()<CR>')
 vim.keymap.set('n', '<leader>pf', ':Pick files<CR>')
 vim.keymap.set('n', '<leader>pg', ':Pick grep_live<CR>')
 vim.keymap.set('i', '<C-Space>', '<C-x><C-o>')
 vim.keymap.set('n', '<leader>ld', vim.lsp.buf.definition)
 vim.keymap.set('n', '<leader>lh', vim.lsp.buf.hover)
+vim.keymap.set('n', '<leader>la', vim.lsp.buf.code_action)
+vim.keymap.set('n', '<leader>dg', vim.diagnostic.open_float)
 vim.cmd('set completeopt+=noselect')
 
