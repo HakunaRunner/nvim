@@ -1,8 +1,16 @@
 {
   "plugins": {
+    "mini-git": {
+      "rev": "7c81d173462042cd3a3571643bce03a6c255fd41",
+      "src": "https://github.com/nvim-mini/mini-git.git"
+    },
     "mini.files": {
       "rev": "fafacfecdd6c5a66bb10d173a749f3c098e84498",
       "src": "https://github.com/nvim-mini/mini.files.git"
+    },
+    "mini.icons": {
+      "rev": "9c7b1b90b15bdd69c52f6e31889dbc9987c30ec4",
+      "src": "https://github.com/nvim-mini/mini.icons.git"
     },
     "mini.pick": {
       "rev": "7c0a674f620ddc701903b887b2dade836b23ea79",

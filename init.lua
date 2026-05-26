@@ -14,6 +14,7 @@ vim.pack.add({
  { src = "https://github.com/nvim-mini/mini.pick.git" },
  { src = "https://github.com/nvim-mini/mini.files.git" },
  { src = "https://github.com/nvim-mini/mini.icons.git" },
+ { src = "https://github.com/nvim-mini/mini-git.git" },
  { src = 'https://github.com/neovim/nvim-lspconfig' },
 })
 
@@ -22,6 +23,7 @@ vim.lsp.enable({"lua_ls", "ts_ls", "angularls"})
 require('mini.pick').setup()
 require('mini.files').setup()
 require('mini.icons').setup()
+require('mini.git').setup()
 
 vim.keymap.set('n', '<leader>c', ':e ~/.config/nvim/init.lua<CR>')
 vim.keymap.set('n', '<leader>w', ':write<CR>')
