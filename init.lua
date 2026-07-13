@@ -9,14 +9,14 @@ vim.o.swapfile = false
 vim.g.mapleader = " "
 vim.o.winborder = "rounded"
 vim.o.termguicolors = true
-vim.cmd.colorscheme("monolith")
 
 vim.pack.add({
- { src = "https://github.com/nvim-mini/mini.pick.git" },
- { src = "https://github.com/nvim-mini/mini.files.git" },
- { src = "https://github.com/nvim-mini/mini.icons.git" },
- { src = "https://github.com/nvim-mini/mini-git.git" },
+ { src = 'https://github.com/nvim-mini/mini.pick.git' },
+ { src = 'https://github.com/nvim-mini/mini.files.git' },
+ { src = 'https://github.com/nvim-mini/mini.icons.git' },
+ { src = 'https://github.com/nvim-mini/mini-git.git'},
  { src = 'https://github.com/neovim/nvim-lspconfig' },
+ { src = 'https://github.com/HakunaRunner/monoruby.nvim' },
 })
 
 vim.lsp.enable({"lua_ls", "ts_ls", "angularls"})
@@ -26,6 +26,7 @@ require('mini.files').setup()
 require('mini.icons').setup()
 require('mini.git').setup()
 
+vim.cmd.colorscheme("monoruby")
 vim.keymap.set('n', '<leader>c', ':e ~/.config/nvim/init.lua<CR>')
 vim.keymap.set('n', '<leader>w', ':write<CR>')
 vim.keymap.set('n', '<leader>q', ':quit<CR>')

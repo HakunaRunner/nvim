@@ -20,6 +20,10 @@
       "rev": "7c0a674f620ddc701903b887b2dade836b23ea79",
       "src": "https://github.com/nvim-mini/mini.pick.git"
     },
+    "monoruby.nvim": {
+      "rev": "d04880bf7f656cd2c7dda90cbfe94893ef7b0ba2",
+      "src": "https://github.com/HakunaRunner/monoruby.nvim"
+    },
     "nvim-lspconfig": {
       "rev": "3f58aeca0c6ece8a9fb8782ea3fcb6024f285be3",
       "src": "https://github.com/neovim/nvim-lspconfig"
