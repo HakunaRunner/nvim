@@ -9,7 +9,7 @@ vim.o.swapfile = false
 vim.g.mapleader = " "
 vim.o.winborder = "rounded"
 vim.o.termguicolors = true
-vim.cmd.colorscheme("catppuccin")
+vim.cmd.colorscheme("monolith")
 
 vim.pack.add({
  { src = "https://github.com/nvim-mini/mini.pick.git" },
